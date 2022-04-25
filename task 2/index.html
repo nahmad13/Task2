@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <aside id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="name-img">
+            <img class="circular" src="images/34.png" alt="" srcset="">
+            <a class="wicon" href="#">Henry Jabbawockiez<ion-icon name="chevron-down-outline"></ion-icon>
+            </a>
+        </div>
+        <ul>
+            <li> <a class="wicon" href="#">
+                    <ion-icon name="grid-outline"></ion-icon>&nbsp HOME
+                </a></li>
+            <li> <a class="wicon" href="#">
+                    <ion-icon name="chatbubble-ellipses"></ion-icon>&nbsp CHAT
+                </a></li>
+            <li> <a class="wicon" href="#">
+                    <ion-icon name="person-outline"></ion-icon>&nbsp CONTACT
+                </a></li>
+            <li> <a class="wicon" href="#">
+                    <ion-icon name="notifications-outline"></ion-icon>&nbsp NOTIFICATION
+                </a></li>
+            <li> <a class="wicon" href="#">
+                    <ion-icon name="calendar-clear-outline"></ion-icon>&nbsp CALENDER
+                </a></li>
+            <li> <a class="wicon" href="#">
+                    <ion-icon name="settings-outline"></ion-icon>&nbsp SETTINGS
+                </a></li>
+            <li><a class="wicon" href="#" class="logout">
+                    <ion-icon name="power-outline"></ion-icon>&nbsp LOGOUT
+                </a></li>
+        </ul>
+    </aside>
+    <main class="main">
+        <section class="allchats">
+            <div class="chat-header">
+                <span id="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <div>
+                    <h3>Chats</h3>
+                    <a href="#">RecentChats<ion-icon name="chevron-down-outline"></ion-icon></a>
+                </div>
+                <button class="new-chat">+ Create New Chat</button>
+            </div>
+            <div class="wrapper">
+                <div class="search_box">
+                    <div class="search_field">
+                        <input type="text" class="input" placeholder=" &#xF002; Search"
+                            style="font-family:Arial, FontAwesome" />
+
+                    </div>
+                    <div class="dropdown">
+                        <div class="default_option">Message<ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chats">
+                <div class="ch" onclick="showmsg()">
+                    <div>
+                        <div class="chat-wrapper">
+                            <img src="images/34.png" alt="" class="circular">
+                            <div class="chat-det">
+                                <h4>Danny Danials</h4>
+                                <p>...writes</p>
+                            </div>
+                        </div>
+                        <p>1 minute ago</p>
+                    </div>
+                    <div class="chat-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis labore earum animi
+                            assumenda! Ex
+                            voluptatum iure placeat, voluptate illo harum libero quos ducimus, repellendus facere esse,
+                            temporibus unde magnam numquam!</p>
+                        <div>2</div>
+                    </div>
+                </div>
+                <div class="ch" onclick="showmsg()">
+                    <div>
+                        <div class="chat-wrapper">
+                            <img src="images/34.png" alt="" class="circular">
+                            <div class="chat-det">
+                                <h4>Danny Danials</h4>
+                                <p>...writes</p>
+                            </div>
+                        </div>
+                        <p>1 minute ago</p>
+                    </div>
+                    <div class="chat-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis labore earum animi
+                            assumenda! Ex
+                            voluptatum iure placeat, voluptate illo harum libero quos ducimus, repellendus facere esse,
+                            temporibus unde magnam numquam!</p>
+                        <div>2</div>
+                    </div>
+                </div>
+                <div class="ch" onclick="showmsg()">
+                    <div>
+                        <div class="chat-wrapper">
+                            <img src="images/34.png" alt="" class="circular">
+                            <div class="chat-det">
+                                <h4>Danny Danials</h4>
+                                <p>...writes</p>
+                            </div>
+                        </div>
+                        <p>1 minute ago</p>
+                    </div>
+                    <div class="chat-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis labore earum animi
+                            assumenda! Ex
+                            voluptatum iure placeat, voluptate illo harum libero quos ducimus, repellendus facere esse,
+                            temporibus unde magnam numquam!</p>
+                        <div>2</div>
+                    </div>
+                </div>
+                <div class="ch" onclick="showmsg()">
+                    <div>
+                        <div class="chat-wrapper">
+                            <img src="images/34.png" alt="" class="circular">
+                            <div class="chat-det">
+                                <h4>Danny Danials</h4>
+                                <p>...writes</p>
+                            </div>
+                        </div>
+                        <p>1 minute ago</p>
+                    </div>
+                    <div class="chat-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis labore earum animi
+                            assumenda! Ex
+                            voluptatum iure placeat, voluptate illo harum libero quos ducimus, repellendus facere esse,
+                            temporibus unde magnam numquam!</p>
+                        <div>2</div>
+                    </div>
+                </div>
+                <div class="ch" onclick="showmsg()">
+                    <div>
+                        <div class="chat-wrapper">
+                            <img src="images/34.png" alt="" class="circular">
+                            <div class="chat-det">
+                                <h4>Danny Danials</h4>
+                                <p>...writes</p>
+                            </div>
+                        </div>
+                        <p>1 minute ago</p>
+                    </div>
+                    <div class="chat-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis labore earum animi
+                            assumenda! Ex
+                            voluptatum iure placeat, voluptate illo harum libero quos ducimus, repellendus facere esse,
+                            temporibus unde magnam numquam!</p>
+                        <div>2</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="message">
+            <div class="msg-header">
+                <div class="msg-det">
+                    <img src="images/34.png" alt="" class="circular">
+                    <div>
+                        <h4>Danny Daniels</h4>
+                        <p>Last Online 5 hours ago</p>
+                    </div>
+                </div>
+                <div class="ic-group" > 
+                    <button class="icon">
+                        <ion-icon name="attach-outline"></ion-icon>
+                    </button>
+                    <button class="icon">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </button>
+                    <button class="icon close" >
+                        <a href="javascript:void(0)" class="closebtn" onclick="closemsg()">×</a>
+                    </button>
+                </div>
+            </div>
+            <div class="msg-section">
+                <div class="bubbleWrapper">
+                    <div class="inlineContainer">
+                        <img class="inlineIcon circular" src="images/34.png">
+                        <div class="otherBubble other">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, impedit!
+                        </div>
+                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="bubbleWrapper">
+                    <div class="inlineContainer own">
+                        <ion-icon name="checkmark-done-outline"></ion-icon>
+                        <div class="ownBubble own">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci alias voluptates vel quas
+                            vitae distinctio aut! Magnam eos totam excepturi!
+                        </div>
+                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="bubbleWrapper">
+                    <div class="inlineContainer">
+                        <img class="inlineIcon circular" src="images/34.png">
+                        <div class="otherBubble other">
+                            Lorem ipsum dolor sit amet.
+                        </div>
+                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="bubbleWrapper">
+                    <div class="inlineContainer own">
+                        <ion-icon name="checkmark-done-outline"></ion-icon>
+                        <div class="ownBubble own">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        </div>
+                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="bubbleWrapper">
+                    <div class="inlineContainer">
+                        <img class="inlineIcon circular" src="images/34.png">
+                        <div class="otherBubble other">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam eos tempora earum vel.
+                            Totam, exercitationem!
+                        </div>
+                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="msg-typer">
+                <a id="ic_add" class="fab">
+                    <ion-icon name="add-circle"></ion-icon>
+                </a>
+                <textarea id="chatSend" name="chat_message" placeholder="Send a message"
+                    class="chat_field chat_message"></textarea>
+                <a id="ic_happy" class="fab">
+                    <ion-icon name="happy-outline"></ion-icon>
+                </a>
+                <a id="ic_send" class="fab">
+                    <ion-icon name="send"></ion-icon>
+                </a>
+
+            </div>
+        </section>
+    </main>
+    <script>
+        function openNav() {
+            closemsg();
+          document.getElementById("mySidenav").style.width = "200px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        function closemsg() {
+          document.getElementById("message").style.display = "none";
+        }
+        function showmsg() {
+            
+            document.getElementById("message").style.display = "block";
+            w = window.innerWidth;
+            var targetWidth = 430;
+            if ( w <= targetWidth) {     
+               const boxes= document.querySelectorAll('.chat-content');
+               const details = document.querySelectorAll('.chat-det');
+               for(var i=0;i< boxes.length;i++)
+               {
+                   boxes[i].style.display ="none";
+                   details[i].style.display ="none";
+               }
+            }
+      
+        }
+    </script>
+</body>
+
+</html>

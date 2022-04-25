@@ -1,0 +1,540 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.circular {
+    border-radius: 50%;
+}
+
+#hamburger {
+    display: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 18%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #FFFFFF;
+    box-shadow: 14.0351px 0px 25px rgba(86, 128, 248, 0.03), 35.0877px 0px 70px rgba(86, 128, 248, 0.05), 23.8596px 5.61404px 50px rgba(0, 0, 0, 0.02);
+    overflow: hidden;
+
+}
+
+.sidenav .closebtn {
+
+    position: absolute;
+    top: 0;
+    right: 25px;
+}
+
+.closebtn {
+    display: none;
+    align-items: center;
+    font-size: 32px;
+    text-decoration: none;
+    color: #707C97;
+}
+
+.name-img {
+    height: 25%;
+    display: grid;
+    align-content: space-evenly;
+    justify-items: center;
+}
+
+ul li ion-icon {
+    font-size: 24px;
+}
+
+.sidenav ul {
+    padding-top: 10px;
+    position: relative;
+    height: 75%;
+    list-style: none;
+    padding-left: 45px;
+}
+
+.name-img a {
+    font-size: 1em;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+ul li>a {
+    color: #707C97;
+    font-size: 16px;
+    margin-bottom: 27px;
+}
+
+ul li>a:hover {
+    color: #2A8BF2
+}
+
+ul li:last-child {
+    position: absolute;
+    bottom: 0px;
+}
+
+main {
+    height: 100%;
+    width: 82%;
+    background: linear-gradient(180deg, #F3F3FB 0%, #FDFBFD 100%);
+    display: flex;
+    justify-content: space-around;
+    margin-left: 18%;
+    padding: 60px 0 0;
+}
+
+.allchats {
+    width: 45%;
+    max-height: 100%;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.chat-header h3 {
+    font-size: 36px;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    margin-bottom: 7px;
+}
+
+.chat-header a {
+    color: #707C97;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.new-chat {
+    width: 240px;
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    color: white;
+    background: linear-gradient(92.68deg, #7CB8F7 0%, #2A8BF2 100%);
+    box-shadow: 6px 6px 25px rgba(42, 139, 242, 0.15), 4px 4px 25px rgba(42, 139, 242, 0.05), 10px 6px 25px rgba(42, 139, 242, 0.15);
+    border-radius: 6px;
+}
+
+.wrapper .search_box {
+    width: 100%;
+    margin-bottom: 10px;
+    background: #fff;
+    border-radius: 6px;
+    display: flex;
+}
+
+.wrapper .search_field {
+    width: 70%;
+    border-right: 2px solid #dde2f1;
+}
+
+.dropdown {
+    color: #9fa3b1;
+    cursor: pointer;
+    margin: auto;
+}
+
+.default_option {
+    font-size: 14px;
+    padding: 13px 0;
+}
+
+.search_field .input {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 38px;
+    color: #6f768d;
+}
+
+.fas {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+    color: #5078ef;
+    cursor: pointer;
+}
+
+.chats {
+    max-height: 80%;
+    overflow-y: scroll;
+}
+
+.ch {
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.ch>div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.chat-wrapper {
+    display: flex;
+}
+
+.chat-wrapper img {
+    width: 40px
+}
+
+.chat-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.ch .chat-det {
+    margin-left: 5px;
+
+}
+
+.chat-det p {
+    color: #2A8BF2;
+}
+
+.chat-content p {
+    width: 90%;
+}
+
+.chat-content div {
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: whitesmoke;
+    background: #FF3366;
+    box-shadow: 4px 4px 15px rgba(198, 27, 74, 0.05), 2px 2px 10px rgba(198, 27, 74, 0.1), 1px 1px 50px rgba(198, 27, 74, 0.15);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #B7BDCB;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#message {
+    display: block;
+    width: 45%;
+    height: 100%;
+
+}
+
+.msg-header {
+    background: #FAFBFF;
+    height: 80px;
+    border-radius: 6px 6px 0px 0px;
+    padding: 0px 30px;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.msg-det {
+    align-items: center;
+    display: flex;
+}
+
+.msg-det img {
+    width: 40px;
+}
+
+.msg-det div {
+    margin-left: 10px;
+}
+
+.msg-det div p {
+    color: #2A8BF2;
+    font-size: 12px;
+}
+
+.msg-section {
+    background: #FFFFFF;
+    overflow-y: scroll;
+    max-height: 75%;
+}
+
+.icon {
+    border-radius: 100%;
+    border: none;
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    color: #6f768d;
+    background-color: white;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.03), 0px 7px 25px rgba(42, 139, 242, 0.03), 0px 5px 25px rgba(42, 139, 242, 0.07);
+    cursor: pointer;
+}
+
+.icon.close {
+    display: none;
+}
+
+.ic-group {
+    display: flex;
+}
+
+.bubbleWrapper {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-self: flex-end;
+    color: #fff;
+}
+
+.inlineContainer {
+    display: inline-flex;
+    align-items: center;
+}
+
+.inlineContainer ion-icon {
+    font-size: 16px;
+    color: #B7BDCB;
+
+}
+
+.inlineContainer.own {
+    flex-direction: row-reverse;
+}
+
+.inlineIcon {
+    width: 20px;
+    object-fit: contain;
+}
+
+.ownBubble {
+    min-width: 60px;
+    max-width: 400px;
+    padding: 14px 18px;
+    margin: 6px 8px;
+    background: #FFFFFF;
+    color: #707C97;
+    border: 1px solid rgba(112, 124, 151, 0.25);
+    box-sizing: border-box;
+    box-shadow: 10px 10px 25px rgba(112, 124, 151, 0.05), 15px 15px 35px rgba(112, 124, 151, 0.05);
+    border-radius: 10px 10px 0px 10px;
+}
+
+.otherBubble {
+    min-width: 60px;
+    max-width: 400px;
+    padding: 14px 18px;
+    margin: 6px 8px;
+    background: linear-gradient(90.54deg, #60A9F6 0%, #2A8BF2 100%);
+    border-radius: 0px 10px 10px 10px;
+    box-shadow: 10px 10px 25px rgba(42, 139, 242, 0.1), 15px 15px 35px rgba(42, 139, 242, 0.05), 10px 10px 50px rgba(42, 139, 242, 0.1);
+    border: none;
+
+}
+
+.own {
+    align-self: flex-end;
+}
+
+.other {
+    align-self: flex-start;
+}
+
+span.own,
+span.other {
+    font-size: 14px;
+    color: grey;
+}
+
+.msg-typer {
+    width: 100%;
+    display: flex;
+    background: #fff;
+    border-top: 1px solid #eee;
+    align-items: center;
+}
+
+.msg-typer a {
+    text-align: center;
+    justify-content: center;
+}
+
+.msg-typer ion-icon {
+    font-size: 20px;
+}
+
+#ic_add {
+    color: #5078ef;
+}
+
+#ic_send {
+    color: #5078ef;
+}
+
+.msg-typer .fab {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+
+.msg-typer .fab>i:hover {
+    color: #42a5f5;
+}
+
+.chat_field {
+    position: relative;
+    margin: 5px 0 5px 0;
+    width: 50%;
+    font-family: "Roboto";
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #4b4b4b;
+    border: none;
+    outline: none;
+    display: inline-block;
+}
+
+.chat_field.chat_message {
+    height: 30px;
+    flex: 1;
+    resize: none;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:1024px) {
+
+    .sidenav ul {
+        padding-left: 25px;
+    }
+
+    ul li ion-icon {
+        font-size: 20px;
+    }
+
+    ul li>a {
+        font-size: 15px;
+    }
+
+    .chat-header h3 {
+        font-size: 32px;
+    }
+
+    .chat-header a {
+        font-size: 16px;
+    }
+
+    .new-chat {
+        width: 200px;
+        height: 50px;
+    }
+
+    .icon.close {
+        display: block;
+    }
+
+    .icon.close .closebtn {
+        display: block;
+    }
+
+    #message {
+        border: 1px solid #a6adc5;
+        display: none;
+        width: 40%;
+        height: 80%;
+        position: absolute;
+        bottom: 0;
+        right: 40px;
+    }
+
+    .allchats {
+        width: 95%;
+
+    }
+
+}
+@media screen and (max-width: 768px) {
+
+    #message {
+        border: 1px solid #a6adc5;
+        display: none;
+        width: 50%;
+    }
+    #hamburger {
+        display: block;
+    }
+    .main {
+        position: relative;
+        margin-left: unset;
+        width: 100%;
+    }
+
+    .sidenav {
+        width: 0px;
+    }
+    .closebtn {
+        display: block;
+    }
+    .chat-header>div{
+        flex: 1;
+        padding-left: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 425px)  {
+
+    
+    #message {
+        width: 80%;
+        right:0;
+    }
+
+    
+
+    
+
+}
+@media screen and (max-width: 320px) {
+
+    #message {
+        width: 100%;
+        right:0;
+    }
+}
